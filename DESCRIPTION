@@ -1,0 +1,13 @@
+Package: JobsInR
+Title: Scraps jobsite indeed.com and returns results in a dataframe
+Version: 0.1
+Authors@R: person("Gaurab", "Poudel", email = "gaurab.poudel@gmail.com", role = c("aut", "cre"))
+Description: Scraps jobsite indeed.com and returns the informations on 'Job Title, Company, Location, summary and URL' as a dataframe. 
+Depends: R (>= 3.3.1)
+Imports:
+    rvest,
+    stringr
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
