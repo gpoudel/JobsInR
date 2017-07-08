@@ -31,7 +31,7 @@ jobs_df <- function(search.keyword, search.location) {
   Jobcount <- as.numeric(gsub(",", "", totalJobs))
 
 
-
+  print(paste0("Creating Dataframe of ", Jobcount, " jobs found for '", search.keyword, "' in '", search.location, "' ..... "))
 
   url_link <- paste0('https://www.indeed.com/jobs?q=',search.keyword,'&l=',search.location,'&start=') 
 
