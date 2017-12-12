@@ -23,10 +23,12 @@ jobs_df <- function(search.keyword, search.location) {
   totalJobs <- first_query %>% 
     html_node("div#searchCount") %>%
     html_text()
-  
-  #totalJobs <- str_sub(totalJobs, start= -3)
+    
   
   totalJobs <- sub(".*of ", "", totalJobs)
+  
+  totalJobs <- str_sub(totalJobs, start= 1, end = -6)
+
 
   Jobcount <- as.numeric(gsub(",", "", totalJobs))
 
