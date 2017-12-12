@@ -27,6 +27,8 @@ jobs_count <- function(search.keyword, search.location) {
   
   totalJobs <- sub(".*of ", "", totalJobs)
 
+  totalJobs <- str_sub(totalJobs, start= 1, end = -6)
+  
   Jobcount <- as.numeric(gsub(",", "", totalJobs))
   
   return(Jobcount)
