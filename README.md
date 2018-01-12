@@ -15,6 +15,14 @@ the package can be installed with [devtools](https://github.com/hadley/devtools)
 ```{r}
 # install.packages("devtools")
 devtools::install_github("gpoudel/JobsInR")
+
+#Also do not forget to install/load dependencies
+#install.packages('rvest')
+#install.packages('stringr')
+
+library('JobsInR')
+library('rvest')
+library('stringr')
 ```
 
 ## Functions
