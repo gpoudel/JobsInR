@@ -49,6 +49,9 @@ As of now the package has the following functions:
   * URL
   
   
+Note: This function also **eliminates any duplicate entries** listed on website (based on original URL), thus the number of rows in data frame can be less than that got from using the function 'jobs_count()'. 
+  
+  
  Eg: 
  ```{r}
  delphi_texas <- jobs_df('delphi', 'texas')
